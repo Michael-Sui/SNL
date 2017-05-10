@@ -44,8 +44,6 @@ public class Main {
             //释放占用的资源。
             unicodeReader.close();
             fileInputStream.close();
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }

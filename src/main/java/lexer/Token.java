@@ -6,13 +6,13 @@ package lexer;
  */
 public class Token {
     //行。
-    int line;
+    private int line;
     //列。
-    int column;
+    private int column;
     //类型。
-    TokenType type;
+    private TokenType type;
     //含义。
-    String value;
+    private String value;
 
     public Token() {
         this(TokenType.EMPTY);

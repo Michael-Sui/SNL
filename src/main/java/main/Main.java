@@ -5,6 +5,10 @@ import lexer.LexerResult;
 import lexer.Token;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import syntaxParser.LL1.LL1Parser;
+import syntaxParser.ParseResult;
+import syntaxParser.SyntaxParser;
+import syntaxParser.SyntaxTree;
 import utils.UnicodeReader;
 
 import java.io.*;
@@ -39,6 +43,22 @@ public class Main {
             } else {
                 errors.forEach(System.err::println);
                 System.exit(1);
+            }
+
+            //进行语法分析。
+            SyntaxParser parser = new LL1Parser();
+            LOG.debug("参数: Parser=LL1, Encoding=UTF-8");
+            ParseResult result = parser.parse(list);
+            if (result == null) {
+                System.err.println("获取分析结果错误");
+                System.exit(1);
+            }
+            if (result.isSuccess()) {
+                SyntaxTree.print(result.getTree().getRoot(), new PrintStream(path + ".tree.txt"),
+                        "Syntax Tree for source code: " + path + "(by LL1)", 0);
+            } else {
+                System.err.println("LL1 Parser: parse Error. Error List:");
+                result.getErrors().forEach(System.err::println);
             }
 
             //释放占用的资源。

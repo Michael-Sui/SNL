@@ -1,7 +1,5 @@
 package syntaxParser.symbol;
 
-
-
 import lexer.Token;
 import lexer.TokenType;
 

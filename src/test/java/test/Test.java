@@ -3,6 +3,8 @@ package test;
 import lexer.Lexer;
 import lexer.LexerResult;
 import lexer.Token;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -13,6 +15,14 @@ import java.util.List;
  * Created by Michael on 2017/5/10.
  */
 public class Test {
+    private void log4jTest() {
+        Logger LOG = LogManager.getLogger(Test.class);
+        LOG.trace("trace");
+        LOG.debug("debug");
+        LOG.warn("debug");
+        LOG.error("error");
+    }
+
     private void lexerTest() {
         InputStream in = Lexer.class.getClassLoader().getResourceAsStream("p.snl");
         Lexer lexer = new Lexer();
@@ -43,6 +53,7 @@ public class Test {
 
     public static void main(String[] args) {
         Test test = new Test();
-        test.lexerTest();
+        //test.log4jTest();
+        //test.lexerTest();
     }
 }

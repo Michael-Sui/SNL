@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Stack;
 
 /**
- * Created by lin on 2016-05-28-028.
+ * Created by Michael on 2017/5/9.
  * 语法树
  */
 public class SyntaxTree {

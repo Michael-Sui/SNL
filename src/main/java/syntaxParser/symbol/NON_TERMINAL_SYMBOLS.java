@@ -11,7 +11,7 @@ import static java.util.Arrays.asList;
 import static java.util.Collections.singletonList;
 
 /**
- * Created by lin on 2016-06-01-001.
+ * Created by Michael on 2017/5/9.
  * 所有终极符
  */
 @SuppressWarnings("unused")

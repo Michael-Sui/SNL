@@ -15,7 +15,7 @@ import java.util.List;
 import static lexer.TokenType.ERROR;
 
 /**
- * Created by lin on 2016-05-28-028.
+ * Created by Michael on 2017/5/9.
  * 语法分析器
  */
 public abstract class SyntaxParser {

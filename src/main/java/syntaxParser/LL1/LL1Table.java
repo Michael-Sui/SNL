@@ -10,7 +10,7 @@ import syntaxParser.symbol.Symbol;
 import java.util.List;
 
 /**
- * Created by lin on 2016-06-01-001.
+ * Created by Michael on 2017/5/9.
  * LL1表
  */
 class LL1Table {

@@ -3,7 +3,7 @@ package syntaxParser.symbol;
 import syntaxParser.TreeNode;
 
 /**
- * Created by lin on 2016-06-01-001.
+ * Created by Michael on 2017/5/9.
  * 非终极符
  */
 public class NonTerminalSymbol extends Symbol {

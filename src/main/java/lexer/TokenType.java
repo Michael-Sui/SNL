@@ -26,7 +26,7 @@ public enum TokenType {
 
     private String str;
 
-    private TokenType(String str) {
+    TokenType(String str) {
         this.str = str;
     }
 

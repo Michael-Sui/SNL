@@ -3,7 +3,7 @@ package syntaxParser;
 import java.util.List;
 
 /**
- * Created by lin on 2016-05-29-029.
+ * Created by Michael on 2017/5/9.
  * 分析结果
  */
 public class ParseResult {

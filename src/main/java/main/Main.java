@@ -40,6 +40,7 @@ public class Main {
                 PrintStream out = new PrintStream(path + ".token.list.txt");
                 list = lexerResult.getTokenList();
                 list.forEach(out::println);
+                out.close();
             } else {
                 errors.forEach(System.err::println);
                 System.exit(1);

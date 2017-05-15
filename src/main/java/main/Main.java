@@ -25,6 +25,7 @@ public class Main {
         try {
             //修改path实现对不同源文件的编译。
             String path = "C:\\Users\\Michael\\Desktop\\SNL语言\\一般例子\\C1.TXT";
+            //String path = "C:\\Users\\Michael\\Desktop\\SNL语言\\错误检查例.TXT";
 
             //获取输入流。
             File file = new File(path);
